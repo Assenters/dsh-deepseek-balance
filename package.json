@@ -1,0 +1,59 @@
+{
+  "name": "dsh-deepseek-balance",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Live DeepSeek wallet balance with startup pricing catalog, adjustable input/cache assumptions, and slider-based token estimates in the sidebar footer.",
+  "license": "MIT",
+  "author": "Assenters",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Assenters/dsh-deepseek-balance.git"
+  },
+  "homepage": "https://github.com/Assenters/dsh-deepseek-balance#readme",
+  "bugs": {
+    "url": "https://github.com/Assenters/dsh-deepseek-balance/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "balance",
+    "token-estimator",
+    "sidebar"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "catalog.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "GITHUB_RELEASE.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
