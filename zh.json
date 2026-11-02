@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek 余额",
+    "description": "在侧边栏头像上方显示 DeepSeek 实时余额，并用可调输入输出比、缓存命中率、推理强度与时段估算可用 tokens。"
+  }
+}

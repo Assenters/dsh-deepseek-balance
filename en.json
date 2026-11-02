@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek Balance",
+    "description": "Shows the live DeepSeek wallet balance above the sidebar avatar and estimates usable tokens with adjustable input/output ratio, cache hits, reasoning effort, and tariff window."
+  }
+}
